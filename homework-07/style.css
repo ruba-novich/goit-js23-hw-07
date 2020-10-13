@@ -1,4 +1,23 @@
 
+/* task-3 */
+
+#gallery {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  
+}
+
+.img-item{
+  list-style: none;
+  margin: 10px;
+}
+
+.img {
+  max-width: 100%;
+  
+}
+
 
 
 /* task-6 */
