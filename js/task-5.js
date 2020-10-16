@@ -1,14 +1,8 @@
 
 
-const inputEl = document.querySelector('#name-input');
-let nameOutEl = document.querySelector('#name-output');
+const input = document.querySelector('#name-input');
+let output = document.querySelector('#name-output');
 
-const onChangeInputName = event => {
-  
-  if (event.target.value === '') {
-    nameOutEl.textContent = 'незнакомец';
-  }
-  nameOutEl.textContent = event.target.value;
-};
-
-inputEl.addEventListener('input', onChangeInputName);
+input.addEventListener (  "input",  () =>
+    (output.textContent = input.value.length > 0 ? input.value : "незнакомец")
+);
